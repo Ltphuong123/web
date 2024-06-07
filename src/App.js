@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useCallback, memo } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
+  const{test} =useSelector(state => state.app)
+  console.log(test);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col gap-8 h-screen items-center border border-red-500 justify-center">
+      aa
     </div>
   );
 }
